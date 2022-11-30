@@ -1,5 +1,5 @@
-##Basic Login Authenication with React
+Basic Login Authenication with React
 
-#Issues
+Issues
 .direct access to /dashboard
 .not using redux
