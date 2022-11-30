@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React,{useState} from 'react';
+import Login from './components/Login';
+import {BrowserRouter, BrowserRouter as Router,Route,Routes,Switch} from 'react-router-dom'
+import wlcm from './components/wlcm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+      <Route exact path="/" element={Login()}/>
+      <Route exact path="/dashboard" element={wlcm()}/>
+     </Routes>
     </div>
-  );
+  )
+
 }
 
 export default App;
