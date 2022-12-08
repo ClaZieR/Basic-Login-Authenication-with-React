@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { Navigate, Outlet } from 'react-router-dom'
 const PrivateRoutes = () => {
-    const isLogged = useSelector((state)=>state.user.isLogged)
+    const isLogged = true //useSelector((state)=>state.initialstate.isLogged
 return (
     isLogged ? <Outlet/> : <Navigate to="/"/>
   )

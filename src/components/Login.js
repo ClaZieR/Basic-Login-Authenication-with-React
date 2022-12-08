@@ -90,6 +90,7 @@ store.dispatch(fetchUser())
   
 const Verify = () => {
   navigate('/dashboard')
+  console.log()
   
 }
 
