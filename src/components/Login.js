@@ -32,6 +32,7 @@ const verify = (response) => {
   const httpcode=response.data.httpCode
   if(httpcode==200){
     dispach({type:'login'})
+    navigate('/dashboard')
     
   }
   else{
