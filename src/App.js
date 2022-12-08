@@ -10,7 +10,7 @@ function App() {
     <div>
       <Routes>
       <Route exact path="/" element={<Login/>}></Route>
-      <Route element={PrivateRoutes(false)}>
+      <Route element={PrivateRoutes()}>
         <Route exact path="/dashboard" element={wlcm()}/>
       </Route>
       </Routes>
