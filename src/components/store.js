@@ -6,14 +6,16 @@ const obj ={
 
 const redFunc = (state=obj,action)=>{
 
-    if(action.type=="login"){
+    if (action.type === "login") {
         return {
-            login:state.login=true
+          ...state,
+          login: true
         }
-    }
+      }
+    
+      return state;
+    };
 
-    return state
-}
 
 const store = configureStore({
     reducer:{func: redFunc}

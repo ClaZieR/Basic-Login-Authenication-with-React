@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {Button,Card,Input,Space,Form, Alert} from 'antd';
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
-import PrivateRoutes from "./PrivateRoutes";
 import { useSelector,useDispatch } from 'react-redux'
 
 
